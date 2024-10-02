@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n1,n2;
+    cout<<"enter the number : ";
+    cin>>n1>>n2;
+    if (n1==0||n2==0)
+    {
+        return 0;
+    }
+    
+    int minm= min(n1,n2);
+    int hcf=1;
+    for (int i = 2; i <= minm; i++)
+    {
+        while (n1%i==0 && n2%i==0)
+        {
+            hcf=hcf*i;
+            n1=n1/i;
+            n2=n2/i;
+        }
+        
+    }
+    cout<<"answer is "<<hcf;
+
+    return 0;
+    
+}
