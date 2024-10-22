@@ -8,7 +8,6 @@ int main(){
     {
         return 0;
     }
-    
     int minm= min(n1,n2);
     int hcf=1;
     for (int i = 2; i <= minm; i++)
@@ -18,11 +17,9 @@ int main(){
             hcf=hcf*i;
             n1=n1/i;
             n2=n2/i;
-        }
-        
+        }    
     }
     cout<<"answer is "<<hcf;
 
-    return 0;
-    
+    return 0;  
 }
